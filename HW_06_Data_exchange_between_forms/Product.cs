@@ -21,6 +21,13 @@ namespace HW_06_Data_exchange_between_forms
             this.kind = kind;
             this.price = price;
         }
+        public void Update(string name, string weight, string kind, string price)
+        {
+            this.name = name;
+            this.weight = weight;
+            this.kind = kind;
+            this.price = price;
+        }
         public override string ToString()
         {
             return $"{name}";

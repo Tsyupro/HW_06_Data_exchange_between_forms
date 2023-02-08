@@ -12,34 +12,40 @@ namespace HW_06_Data_exchange_between_forms
 {
     public partial class ProductForm : Form
     {
-
+        public Product? product = null;
         public ProductForm()
         {
             InitializeComponent();
         }
-        public ProductForm(Product product)
+        public ProductForm(Product _product)
         {
             InitializeComponent();
-            textBox1.Text = product.name;
-            textBox2.Text = product.weight;
-            textBox3.Text = product.kind;
-            textBox4.Text = product.price;
+            
+            NameBox.Text = _product.name;
+            WeightBox.Text = _product.weight;
+            KindBox.Text = _product.kind;
+            PriceBox.Text = _product.price;
+            
+            product = _product;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "" && textBox2.Text != "" && textBox3.Text != "" && textBox4.Text != "")
-            {
-                InfoProductTransfer.error = false;
-                InfoProductTransfer.nameInfo = textBox1.Text;
-                InfoProductTransfer.weightInfo = textBox2.Text;
-                InfoProductTransfer.kindInfo = textBox3.Text;
-                InfoProductTransfer.priceInfo = textBox4.Text;
+            if (NameBox.Text != "" && WeightBox.Text != "" && KindBox.Text != "" && PriceBox.Text != "")
+            {            
+                if(product!= null)
+                {
+                    product.Update(NameBox.Text, WeightBox.Text, KindBox.Text, PriceBox.Text);
+                }
+                else
+                {
+                    product = new Product(NameBox.Text, WeightBox.Text, KindBox.Text, PriceBox.Text);
+                }
             }
             else
             {
                 MessageBox.Show(" Element empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                InfoProductTransfer.error = true;
+                return;
             }
 
            this.Close();

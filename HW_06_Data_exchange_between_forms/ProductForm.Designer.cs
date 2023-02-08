@@ -32,10 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.NameBox = new System.Windows.Forms.TextBox();
+            this.WeightBox = new System.Windows.Forms.TextBox();
+            this.KindBox = new System.Windows.Forms.TextBox();
+            this.PriceBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -83,41 +83,41 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Ціна";
             // 
-            // textBox1
+            // NameBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DimGray;
-            this.textBox1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.Location = new System.Drawing.Point(144, 69);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 23);
-            this.textBox1.TabIndex = 4;
+            this.NameBox.BackColor = System.Drawing.Color.DimGray;
+            this.NameBox.ForeColor = System.Drawing.Color.Gainsboro;
+            this.NameBox.Location = new System.Drawing.Point(144, 69);
+            this.NameBox.Name = "NameBox";
+            this.NameBox.Size = new System.Drawing.Size(100, 23);
+            this.NameBox.TabIndex = 4;
             // 
-            // textBox2
+            // WeightBox
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DimGray;
-            this.textBox2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBox2.Location = new System.Drawing.Point(125, 102);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 23);
-            this.textBox2.TabIndex = 5;
+            this.WeightBox.BackColor = System.Drawing.Color.DimGray;
+            this.WeightBox.ForeColor = System.Drawing.Color.Gainsboro;
+            this.WeightBox.Location = new System.Drawing.Point(125, 102);
+            this.WeightBox.Name = "WeightBox";
+            this.WeightBox.Size = new System.Drawing.Size(100, 23);
+            this.WeightBox.TabIndex = 5;
             // 
-            // textBox3
+            // KindBox
             // 
-            this.textBox3.BackColor = System.Drawing.Color.DimGray;
-            this.textBox3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBox3.Location = new System.Drawing.Point(119, 131);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 6;
+            this.KindBox.BackColor = System.Drawing.Color.DimGray;
+            this.KindBox.ForeColor = System.Drawing.Color.Gainsboro;
+            this.KindBox.Location = new System.Drawing.Point(119, 131);
+            this.KindBox.Name = "KindBox";
+            this.KindBox.Size = new System.Drawing.Size(100, 23);
+            this.KindBox.TabIndex = 6;
             // 
-            // textBox4
+            // PriceBox
             // 
-            this.textBox4.BackColor = System.Drawing.Color.DimGray;
-            this.textBox4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textBox4.Location = new System.Drawing.Point(128, 160);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 7;
+            this.PriceBox.BackColor = System.Drawing.Color.DimGray;
+            this.PriceBox.ForeColor = System.Drawing.Color.Gainsboro;
+            this.PriceBox.Location = new System.Drawing.Point(128, 160);
+            this.PriceBox.Name = "PriceBox";
+            this.PriceBox.Size = new System.Drawing.Size(100, 23);
+            this.PriceBox.TabIndex = 7;
             // 
             // button1
             // 
@@ -138,10 +138,10 @@
             this.BackgroundImage = global::HW_06_Data_exchange_between_forms.Properties.Resources._1663242916_b_1;
             this.ClientSize = new System.Drawing.Size(297, 248);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PriceBox);
+            this.Controls.Add(this.KindBox);
+            this.Controls.Add(this.WeightBox);
+            this.Controls.Add(this.NameBox);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -159,10 +159,10 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox NameBox;
+        private TextBox WeightBox;
+        private TextBox KindBox;
+        private TextBox PriceBox;
         private Button button1;
     }
 }

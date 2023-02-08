@@ -9,11 +9,11 @@ namespace HW_06_Data_exchange_between_forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ProductForm addProduct = new ProductForm();
-            addProduct.ShowDialog();
-            if (!InfoProductTransfer.error)
+            ProductForm productForm = new ProductForm();
+            productForm.ShowDialog();
+            if (productForm.product!=null)
             {
-                listBox1.Items.Add(InfoProductTransfer.TransferProduct());
+                listBox1.Items.Add(productForm.product);
             }
         }
 
@@ -58,12 +58,12 @@ namespace HW_06_Data_exchange_between_forms
             if (item != null)
             {
                 int index = listBox1.SelectedIndex;
-                ProductForm addProduct = new ProductForm(item);
-                addProduct.ShowDialog();
-                if (!InfoProductTransfer.error)
+                ProductForm productForm = new ProductForm(item);
+                productForm.ShowDialog();
+                if (productForm.product != null)     
                 {
                     listBox1.Items.RemoveAt(listBox1.SelectedIndex);
-                    listBox1.Items.Insert(index, InfoProductTransfer.TransferProduct());
+                    listBox1.Items.Insert(index,productForm.product);
                 }
             }
             else
