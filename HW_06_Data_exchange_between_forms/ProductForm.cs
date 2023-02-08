@@ -48,7 +48,7 @@ namespace HW_06_Data_exchange_between_forms
                 return;
             }
 
-           this.Close();
+            this.Close();
         }
     }
 }

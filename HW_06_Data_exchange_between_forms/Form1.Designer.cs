@@ -58,6 +58,9 @@
             this.button1.Text = "Добавити";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.MouseEnter += new System.EventHandler(this.button_MouseEnter);
+            this.button1.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.button1.MouseHover += new System.EventHandler(this.button_MouseHover);
             // 
             // button2
             // 
@@ -70,6 +73,9 @@
             this.button2.Text = "Видалити";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.MouseEnter += new System.EventHandler(this.button_MouseEnter);
+            this.button2.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.button2.MouseHover += new System.EventHandler(this.button_MouseHover);
             // 
             // button3
             // 
@@ -82,6 +88,9 @@
             this.button3.Text = "Очистити список";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.MouseEnter += new System.EventHandler(this.button_MouseEnter);
+            this.button3.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.button3.MouseHover += new System.EventHandler(this.button_MouseHover);
             // 
             // button5
             // 
@@ -94,6 +103,9 @@
             this.button5.Text = "Повна інформація";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.MouseEnter += new System.EventHandler(this.button_MouseEnter);
+            this.button5.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.button5.MouseHover += new System.EventHandler(this.button_MouseHover);
             // 
             // button4
             // 
@@ -106,6 +118,9 @@
             this.button4.Text = "Редагувати";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.MouseEnter += new System.EventHandler(this.button_MouseEnter);
+            this.button4.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.button4.MouseHover += new System.EventHandler(this.button_MouseHover);
             // 
             // Form1
             // 

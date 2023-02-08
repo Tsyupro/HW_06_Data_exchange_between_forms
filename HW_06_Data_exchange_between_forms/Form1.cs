@@ -10,7 +10,7 @@ namespace HW_06_Data_exchange_between_forms
         private void button1_Click(object sender, EventArgs e)
         {
             ProductForm productForm = new ProductForm();
-            productForm.ShowDialog();
+            productForm.Show();
             if (productForm.product!=null)
             {
                 listBox1.Items.Add(productForm.product);
@@ -71,6 +71,25 @@ namespace HW_06_Data_exchange_between_forms
                 MessageBox.Show(" Select an item", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+        private void button_MouseHover(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button_MouseEnter(object sender, EventArgs e)
+        {
+            Button? button = sender as Button;
+            button.BackColor = Color.Silver;
+            button.ForeColor = Color.Black;
+        }
+
+        private void button_MouseLeave(object sender, EventArgs e)
+        {
+            Button? button = sender as Button;
+            button.BackColor = Color.DimGray;
+            button.ForeColor = Color.White;
         }
     }
 }
