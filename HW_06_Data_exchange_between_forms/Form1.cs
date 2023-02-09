@@ -10,7 +10,7 @@ namespace HW_06_Data_exchange_between_forms
         private void button1_Click(object sender, EventArgs e)
         {
             ProductForm productForm = new ProductForm();
-            productForm.Show();
+            productForm.ShowDialog();
             if (productForm.product!=null)
             {
                 listBox1.Items.Add(productForm.product);
